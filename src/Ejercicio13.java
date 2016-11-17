@@ -77,6 +77,50 @@ public class Ejercicio13 {
                         break;
 
                     case 4:
+                        System.out.println("Dime la nota de tu compañero");
+                        Double notaamigo1= Double.parseDouble(buffer.readLine());
+                        System.out.println("Dime la nota de otro de tus compañeros");
+                        Double notaamigo2= Double.parseDouble(buffer.readLine());
+
+                        Double media = (nota+notaamigo1+notaamigo2)/3;
+
+                        if (nota > notaamigo1 && nota > notaamigo2){
+
+                            System.out.println("Tu nota es la mas alta");
+
+                        }
+                        else if (notaamigo1 > nota && notaamigo1 > notaamigo2){
+
+                            System.out.println("La nota mas alta es la de tu primer compañero");
+                        }
+                        else if (notaamigo2 > nota && notaamigo2 > notaamigo1){
+
+                            System.out.println("La nota mas alta es la de tu segundo compañero");
+                        }
+
+                        System.out.println("La nota media de todos es " +media);
+
+                        if (nota < notaamigo1 && nota < notaamigo2){
+
+                            System.out.println("Tu nota es la mas baja");
+
+                        }
+                        else if (notaamigo1 < nota && notaamigo1 < notaamigo2){
+
+                            System.out.println("La nota mas baja es la de tu primer compañero");
+                        }
+                        else if (notaamigo2 < nota && notaamigo2 < notaamigo1){
+
+                            System.out.println("La nota mas baja es la de tu segundo compañero");
+                        }
+
+                        System.out.println("En 5 segons es tornara a mostrar el menu");
+                        break;
+
+                    case 5:
+
+
+
 
 
                     default: System.out.println("Opcio incorrecta. 1 a 7.");
